@@ -1,0 +1,29 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b0b0b;color:#f4f4f0;font-family:Arial,sans-serif}
+.shell{max-width:1050px;margin:auto;padding:22px}
+nav{display:flex;justify-content:space-between;border-bottom:1px solid #333;padding-bottom:18px}
+nav span,i{color:#9cff00}
+small{font-size:10px;letter-spacing:2px;color:#888}
+.hero{padding:105px 0 120px}
+.hero h1{font-size:clamp(50px,9vw,105px);line-height:.88;letter-spacing:-5px;margin:18px 0 28px}
+.hero p{color:#aaa;font-size:18px;max-width:430px;line-height:1.5}
+.hero a,button{display:inline-block;margin-top:20px;padding:16px 22px;background:#f4f4f0;color:#0b0b0b;border:0;text-decoration:none;font-weight:900;cursor:pointer}
+section{border-top:1px solid #333;padding:45px 0 85px}
+.head{display:flex;gap:24px;align-items:baseline;margin-bottom:40px}
+.head h2{margin:0;font-size:30px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+label{display:flex;flex-direction:column;gap:9px;color:#aaa;font-size:10px;letter-spacing:1.5px}
+input,select{background:#141414;color:white;border:1px solid #333;padding:17px;font-size:16px}
+button{grid-column:1/-1;background:#9cff00}
+.hidden{display:none}
+.card{border:1px solid #333;padding:28px;max-width:700px}
+.card h3{color:#9cff00;letter-spacing:2px;font-size:12px}
+.card p{font-size:17px;line-height:1.55;color:#ddd}
+.card strong{color:#fff}
+footer{border-top:1px solid #333;padding:25px 0;color:#666;font-size:10px;letter-spacing:2px;display:flex;justify-content:space-between}
+@media(max-width:650px){
+form{grid-template-columns:1fr}
+.hero h1{letter-spacing:-3px}
+button{grid-column:auto}
+}
