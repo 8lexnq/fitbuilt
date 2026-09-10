@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITBUILT — Your Next Fit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="shell">
+
+    <nav>
+      <strong>FIT<span>BUILT</span></strong>
+      <small>AI FIT BUILDER</small>
+    </nav>
+
+    <main>
+
+      <section class="hero">
+        <small>YOUR BODY. YOUR STYLE.</small>
+
+        <h1>
+          YOU GIVE ME<br>
+          THE STATS.<br>
+          I BUILD THE FIT.
+        </h1>
+
+        <p>
+          Tell us your height, build, style and budget.
+          We'll build an outfit around you.
+        </p>
+
+        <a href="#builder">BUILD MY FIT ↓</a>
+      </section>
+
+
+      <section id="builder">
+
+        <div class="head">
+          <small>01</small>
+          <h2>BUILD YOUR FIT</h2>
+        </div>
+
+        <form id="fitForm">
+
+          <label>
+            HEIGHT
+            <input
+              id="height"
+              type="number"
+              placeholder="e.g. 170"
+              required
+            >
+          </label>
+
+          <label>
+            BUILD
+            <select id="build" required>
+              <option value="">Select</option>
+              <option value="slim">Slim</option>
+              <option value="average">Average</option>
+              <option value="athletic">Athletic</option>
+              <option value="broad">Broad</option>
+            </select>
+          </label>
+
+          <label>
+            STYLE
+            <select id="style" required>
+              <option value="">Select</option>
+              <option value="street">Street</option>
+              <option value="luxury">Luxury</option>
+              <option value="sporty">Sporty</option>
+              <option value="casual">Casual</option>
+            </select>
+          </label>
+
+          <label>
+            BUDGET
+            <select id="budget" required>
+              <option value="">Select</option>
+              <option value="under-10000">Under ¥10,000</option>
+              <option value="10000-30000">¥10,000–¥30,000</option>
+              <option value="30000-50000">¥30,000–¥50,000</option>
+              <option value="50000-plus">¥50,000+</option>
+            </select>
+          </label>
+
+          <label>
+            FAVORITE BRANDS
+            <input
+              id="brands"
+              type="text"
+              placeholder="e.g. Nike, AMIRI, Balenciaga"
+            >
+          </label>
+
+          <label>
+            OCCASION
+            <select id="occasion" required>
+              <option value="">Select</option>
+              <option value="everyday">Everyday</option>
+              <option value="date">Date</option>
+              <option value="party">Party</option>
+              <option value="school">School</option>
+              <option value="travel">Travel</option>
+            </select>
+          </label>
+
+          <button type="submit">
+            BUILD MY FIT →
+          </button>
+
+        </form>
+
+        <div id="result" class="hidden"></div>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+      <span>FITBUILT</span>
+      <span>BUILD DIFFERENT.</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
